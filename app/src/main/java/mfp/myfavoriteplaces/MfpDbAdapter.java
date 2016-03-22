@@ -36,7 +36,7 @@ import java.util.Date;
  * of using a collection of inner classes (which is less scalable and not
  * recommended).
  */
-public class NotesDbAdapter {
+public class MfpDbAdapter {
 
     public static final String KEY_TITLE = "title";
     public static final String KEY_ROWID = "_id";
