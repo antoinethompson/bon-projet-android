@@ -38,6 +38,8 @@ public class NotesDbAdapter {
 
     public static final String KEY_TITLE = "title";
     public static final String KEY_ROWID = "_id";
+    public static final String KEY_ROWADRESS = "adresse";
+    public static final Date KEY
 
     private static final String TAG = "MfpDbAdapter";
     private DatabaseHelper mDbHelper;
@@ -46,8 +48,8 @@ public class NotesDbAdapter {
     /**
      * Database creation sql statement
      */
-    private static final String DATABASE_CREATE =   "create table categories (_id integer primary key autoincrement, " + "C_title text not null);" +
-                                                    "create table endroits (_id integer primary key autoincrement, " + "E_title text not null," + "E_adresse text not null," + "E_dateCrea date not null," +"E_note text null);";
+    private static final String DATABASE_CREATE =   "create table categories (_id integer primary key autoincrement, " + "title text not null);" +
+                                                    "create table endroits (_id integer primary key autoincrement, " + "title text not null," + "adresse text not null," + "dateCrea date not null," +"note text null);";
     private static final String DATABASE_NAME = "data";
     private static final String DATABASE_TABLE_CATEGORIES = "categories";
     private static final String DATABAE_TABLE_ENDROITS = "endroits";
