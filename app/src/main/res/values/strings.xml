@@ -8,9 +8,10 @@
     <string name="action_settings">Paramètres</string>
 
     <!--fragment_ajouter_lieu.xml -->
-    <string name="button_add_place">Ajouter</string>
+    <string name="button_add_place">Valider</string>
     <string name="button_cancel_add_place">Annuler</string>
     <string name="title_fragment">Ajouter une place</string>
     <string name="input_title_place">Titre du lieu</string>
+    <string name="label_category">Categories</string>
 
 </resources>

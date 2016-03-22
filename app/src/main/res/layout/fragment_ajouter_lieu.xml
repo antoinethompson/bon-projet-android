@@ -1,31 +1,32 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="@color/colorPrimary"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.thompson.antoine.mesendroitspreferes.AjouterLieu">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/title_fragment"
             android:text="@string/title_fragment"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <EditText
             android:id="@+id/input_title_place"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:hint="@string/input_title_place"/>
 
     </LinearLayout>
@@ -33,17 +34,51 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_category"
+                android:text="@string/label_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/button_add_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_add_category"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <Spinner
+        android:id="@+id/list_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip">
 
         <Button
             android:id="@+id/button_add_place"
             android:text="@string/button_add_place"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
             android:textColor="@color/colorWhite"
             android:background="@color/colorSuccess"
-            android:textSize="28sp"/>
+            android:textSize="15sp"/>
 
         <Button
             android:id="@+id/button_cancel_add_place"
@@ -52,8 +87,8 @@
             android:layout_width="wrap_content"
             android:textColor="@color/colorWhite"
             android:background="@color/colorDanger"
-            android:textSize="28sp"/>
+            android:textSize="15sp"/>
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
