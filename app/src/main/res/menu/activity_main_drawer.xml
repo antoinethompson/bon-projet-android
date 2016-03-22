@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_ajouter"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Ajouter" />
+        <item
+            android:id="@+id/nav_listlieu"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Liste des Lieux" />
+        <item
+            android:id="@+id/nav_apropos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="A propos de l'app" />
+        <item
+            android:id="@+id/nav_quitter"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Quitter" />
+    </group>
+
+
+</menu>
