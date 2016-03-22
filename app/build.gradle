@@ -6,6 +6,9 @@ android {
 
     defaultConfig {
         applicationId "com.thompson.antoine.mesendroitspreferes"
+
+        applicationId "mfp.myfavoriteplaces"
+
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
@@ -26,4 +29,5 @@ dependencies {
     compile 'com.android.support:design:23.2.0'
     compile 'de.hdodenhof:circleimageview:1.3.0'
     compile 'com.android.support:support-v4:23.2.0'
+
 }
