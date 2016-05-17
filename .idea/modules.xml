@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MesEndroitsPreferes2.iml" filepath="$PROJECT_DIR$/MesEndroitsPreferes2.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyFavoritePlaces.iml" filepath="$PROJECT_DIR$/MyFavoritePlaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
